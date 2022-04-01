@@ -13,10 +13,6 @@ const checkHex = (string) => {
      }
 };
 
-const schema = Joi.object({
-     string: Joi.string().required().alphanum(),
-});
-
 app.get("/", (req, res) => {
      res.sendFile(__dirname + "/views/index.html");
 });
